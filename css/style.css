@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #101010;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+img.logo_t {
+  margin-top: 20px;
+  margin-left: 100px;
+  height: 5vh;
+}
+
+div.menu {
+  font-family: 'Montserrat', sans-serif;
+  position: absolute;
+  font-size: 18px;
+  height: 22px;
+  right: 170px;
+  color: white;
+}
+
+nav {
+  display: flex;
+  padding-right: 100px;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Barlow', sans-serif;
+  background: #101010;
+  height: 8vh;
+  font-size: 22px;
+
+}
+
+main {
+  background: #101010;
+  background-size: cover;
+  height: 92vh;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-list li {
+  letter-spacing: 2px;
+  margin-left: 32px;
+}
+
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+
+}
+
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: #fff;
+  margin: 8px;
+  transition: 0.3s;
+}
+
+@media (max-width: 99999999px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .nav-list {
+    position: absolute;
+    top: 8vh;
+    right: 75px;
+    width: 10vw;
+    height: 50vh;
+    background: #101010;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+  }
+
+  .nav-list li {
+    margin-left: 0;
+    opacity: 0;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+
+}
+
+.nav-list.active {
+  transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+  opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+  transform: rotate(45deg) translate(-5px, -7px);
+}
+
+div.logo_home {
+  width: 100%;
+  position: absolute;
+  top: 410px;
+  margin-bottom: 0;
+}
+
+img.logo_etech {
+  width: 55%;
+  margin-left: 22%;
+}
+
+/*------ QUEM SOMOS? ----------------*/
+
+div.quem_somos {
+  background-color: #151515;
+  position: relative;
+  height: 700px;
+  top: -40px;
+}
+
+div.borda_azul {
+  height: 280px;
+  position: relative;
+  top: 210px;
+  left: 25.6%;
+  width: 0.4%;
+  background-color: #00c7ff;
+}
+
+img.foto_quem_somos {
+  position: absolute;
+  height: 280px;
+  top: 210px;
+  margin-left: 26%;
+  filter: grayscale(100%);
+}
+
+p.titulo_quem {
+  position: absolute;
+  color: white;
+  height: 280px;
+  top: 210px;
+  margin-left: 48%;
+  font-size: 34px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+p.texto_quem {
+  position: absolute;
+  color: white;
+  height: 270px;
+  top: 280px;
+  margin-left: 48%;
+  margin-right: 22%;
+  font-size: 22px;
+  letter-spacing: 1.5px;
+  font-family: 'Barlow', sans-serif;
+}
