@@ -15,7 +15,6 @@ body {
 a {
   color: #fff;
   text-decoration: none;
-  transition: 0.3s;
 }
 
 a:hover {
@@ -33,9 +32,10 @@ div.menu {
   position: absolute;
   font-size: 18px;
   height: 22px;
-  right: 170px;
+  right: 155px;
   color: white;
 }
+
 
 nav {
   display: flex;
@@ -211,4 +211,24 @@ p.texto_quem {
   font-size: 20px;
   letter-spacing: 1.5px;
   font-family: 'Barlow', sans-serif;
+}
+
+/*-------------- Scroll Bar -------------*/
+::-webkit-scrollbar {
+  width: 15px;
+  -webkit-background-clip: text;
+}
+
+::-webkit-scrollbar-track {
+  background: #101010;
+  transition: background-color 2s;
+}
+
+::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00c7ff;
 }
