@@ -22,8 +22,9 @@ a:hover {
 }
 
 img.logo_t {
-  margin-top: 20px;
-  margin-left: 100px;
+  position: absolute;
+  top: 3%;
+  left: 8%;
   height: 5vh;
 }
 
@@ -32,7 +33,8 @@ div.menu {
   position: absolute;
   font-size: 18px;
   height: 22px;
-  right: 155px;
+  top: 3.5%;
+  right: 11%;
   color: white;
 }
 
@@ -46,7 +48,6 @@ nav {
   background: #101010;
   height: 8vh;
   font-size: 22px;
-
 }
 
 main {
@@ -67,8 +68,10 @@ main {
 
 .mobile-menu {
   display: none;
+  position: absolute;
+  top: 2%;
+  right: 6%;
   cursor: pointer;
-
 }
 
 .mobile-menu div {
@@ -87,11 +90,14 @@ main {
 
   .nav-list {
     position: absolute;
+    z-index: 1;
+    text-align: center;
+    display: none;
     top: 8vh;
     right: 75px;
+    background: #101010;
     width: 11vw;
     height: 70vh;
-    background: #101010;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
@@ -111,6 +117,7 @@ main {
 }
 
 .nav-list.active {
+  display: flex;
   transform: translateX(0);
 }
 
@@ -156,7 +163,7 @@ li:hover:after {
 div.logo_home {
   width: 100%;
   position: absolute;
-  top: 410px;
+  top: 46%;
   margin-bottom: 0;
 }
 
@@ -215,8 +222,7 @@ p.texto_quem {
 
 /*-------------- Scroll Bar -------------*/
 ::-webkit-scrollbar {
-  width: 15px;
-  -webkit-background-clip: text;
+  width: 13px;
 }
 
 ::-webkit-scrollbar-track {
@@ -231,4 +237,90 @@ p.texto_quem {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #00c7ff;
+}
+
+/*--------- Servicos ----------*/
+
+div.servicos {
+  height: 550px;
+  background-color: pink;
+}
+
+/*--------- RODAPE ----------*/
+
+div.rodape {
+  height: 160px;
+}
+
+p.linha_rdp {
+  position: relative;
+  width: 90%;
+  left: 5%;
+  margin-block: 40px;
+  background-color: white;
+  height: 1px;
+}
+
+div.icons {
+  margin-top: 50px;
+  width: 100%;
+  margin-inline: 15%;
+  display: flex;
+}
+
+.icons a {
+  padding-inline: 6%;
+
+}
+
+
+@media (max-width: 500px) {
+
+  /* Menu ------------- */
+
+  img.logo_t {
+    display: none;
+  }
+
+  nav {
+    padding-right: 50px;
+    padding-top: 10px;
+  }
+
+  .nav-list {
+    right: 0px;
+    width: 100%;
+  }
+
+  div.menu {
+    display: none;
+  }
+
+  div.logo_home {
+    width: 100%;
+    position: absolute;
+    top: 270px;
+    margin-bottom: 0;
+  }
+
+  img.logo_etech {
+    width: 75%;
+    margin-left: 13%;
+  }
+
+  ::-webkit-scrollbar {
+    width: 11px;
+  }
+
+  /* Rodapé ----------- */
+
+  div.icons {
+    width: 100%;
+    margin-inline: 10%;
+    display: flex;
+  }
+
+  .icons a {
+    padding-inline: 5%;
+  }
 }
