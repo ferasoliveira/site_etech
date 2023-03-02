@@ -185,8 +185,8 @@ div.borda_azul {
   height: 280px;
   position: relative;
   top: 210px;
-  left: 19.6%;
-  width: 0.4%;
+  left: calc(24.6% - 100px);
+  width: 10px;
   background-color: #00c7ff;
 }
 
@@ -194,7 +194,7 @@ img.foto_quem_somos {
   position: absolute;
   height: 280px;
   top: 210px;
-  margin-left: 20%;
+  margin-left: calc(25.2% - 100px);
   filter: grayscale(100%);
 }
 
@@ -214,7 +214,7 @@ p.texto_quem {
   height: 270px;
   top: 280px;
   margin-left: 50%;
-  margin-right: 18%;
+  margin-right: 16%;
   font-size: 20px;
   letter-spacing: 1.5px;
   font-family: 'Barlow', sans-serif;
@@ -264,17 +264,17 @@ p.linha_rdp {
 div.icons {
   margin-top: 50px;
   width: 100%;
-  margin-inline: 15%;
+  margin-inline: calc(25.2% - 70px);
   display: flex;
 }
 
 .icons a {
-  padding-inline: 6%;
+  padding-inline: 5%;
 
 }
 
-
-@media (max-width: 500px) {
+/* Tabletes : 481 - 768 --------- */
+@media (max-width: 768px) {
 
   /* Menu ------------- */
 
@@ -299,7 +299,7 @@ div.icons {
   div.logo_home {
     width: 100%;
     position: absolute;
-    top: 270px;
+    top: 340px;
     margin-bottom: 0;
   }
 
@@ -307,6 +307,44 @@ div.icons {
     width: 75%;
     margin-left: 13%;
   }
+
+  /* Quem Somos -------- */
+
+  div.quem_somos {
+    height: 650px;
+    width: 100%;
+    text-align: center;
+  }
+
+  div.borda_azul {
+    display: none;
+  }
+
+  img.foto_quem_somos {
+    height: 250px;
+    top: 340px;
+    margin: 0%;
+    position: relative;
+  }
+
+  p.titulo_quem {
+    top: 75px;
+    width: 100%;
+    margin-left: 0%;
+    text-align: center;
+    font-size: 25px;
+  }
+
+  p.texto_quem {
+    top: 140px;
+    margin-left: 0%;
+    width: 70%;
+    padding-inline: 15%;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  /* Barra de scroll */
 
   ::-webkit-scrollbar {
     width: 11px;
@@ -316,11 +354,39 @@ div.icons {
 
   div.icons {
     width: 100%;
-    margin-inline: 10%;
+    margin-inline: calc(25.2% - 70px);
     display: flex;
   }
 
   .icons a {
     padding-inline: 5%;
+  }
+}
+
+/* Celulares : 320 - 480 --------- */
+@media (max-width: 480px) {
+
+  /* Quem Somos -------- */
+
+  div.quem_somos {
+    height: 620px;
+  }
+
+  img.foto_quem_somos {
+    height: 28%;
+    top: 370px;
+  }
+
+  p.texto_quem {
+    font-size: 12px;
+    top: 145px;
+  }
+
+
+  /* Rodapé ----------- */
+
+  div.icons {
+    width: 100%;
+    display: flex;
   }
 }
