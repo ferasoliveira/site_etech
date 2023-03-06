@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap");
 
 * {
   margin: 0;
@@ -29,7 +29,7 @@ img.logo_t {
 }
 
 div.menu {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   position: absolute;
   font-size: 18px;
   height: 22px;
@@ -38,13 +38,12 @@ div.menu {
   color: white;
 }
 
-
 nav {
   display: flex;
   padding-right: 100px;
   justify-content: space-between;
   align-items: center;
-  font-family: 'Barlow', sans-serif;
+  font-family: "Barlow", sans-serif;
   background: #101010;
   height: 8vh;
   font-size: 22px;
@@ -83,7 +82,6 @@ main {
 }
 
 @media (max-width: 99999999px) {
-
   body {
     overflow-x: hidden;
   }
@@ -113,7 +111,6 @@ main {
   .mobile-menu {
     display: block;
   }
-
 }
 
 .nav-list.active {
@@ -147,7 +144,7 @@ main {
 
 li:after {
   display: block;
-  content: '';
+  content: "";
   border-bottom: solid 1px #00c7ff;
   padding-bottom: 4px;
   transform: scaleX(0);
@@ -205,7 +202,7 @@ p.titulo_quem {
   top: 210px;
   margin-left: 50%;
   font-size: 34px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 p.texto_quem {
@@ -217,7 +214,7 @@ p.texto_quem {
   margin-right: 16%;
   font-size: 20px;
   letter-spacing: 1.5px;
-  font-family: 'Barlow', sans-serif;
+  font-family: "Barlow", sans-serif;
 }
 
 /*-------------- Scroll Bar -------------*/
@@ -236,14 +233,23 @@ p.texto_quem {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #00c7ff;
+  background: rgb(0, 199, 255);
 }
 
 /*--------- Servicos ----------*/
 
-div.servicos {
+/* div.servicos {
   height: 550px;
   background-color: pink;
+} */
+
+p.titulo_servicos {
+  color: white;
+  height: 50px;
+  margin-top: 100px;
+  text-align: center;
+  font-size: 34px;
+  font-family: "Montserrat", sans-serif;
 }
 
 /*--------- RODAPE ----------*/
@@ -270,12 +276,10 @@ div.icons {
 
 .icons a {
   padding-inline: 5%;
-
 }
 
 /* Tabletes : 481 - 768 --------- */
 @media (max-width: 768px) {
-
   /* Menu ------------- */
 
   img.logo_t {
@@ -365,7 +369,6 @@ div.icons {
 
 /* Celulares : 320 - 480 --------- */
 @media (max-width: 480px) {
-
   /* Quem Somos -------- */
 
   div.quem_somos {
@@ -381,7 +384,6 @@ div.icons {
     font-size: 12px;
     top: 145px;
   }
-
 
   /* Rodapé ----------- */
 
