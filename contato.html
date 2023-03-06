@@ -8,16 +8,18 @@
   <title>ETECH Jr. Contato</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/style_ctt.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 </head>
 
 <body>
   <header>
+    <div class="cursor"></div>
     <nav>
       <a class="logo" href="#">
         <image src="css/imagens/logo_t_branco.png" class="logo_t"></image>
       </a>
       <div class="menu">
-        <a href="#" class="menu">MENU</a>
+        <a>MENU</a>
       </div>
       <div class="mobile-menu">
         <div class="line1"></div>
@@ -26,11 +28,11 @@
       </div>
       <ul class="nav-list">
         <li><a href="index.html">HOME</a></li>
-        <li><a href="index.html">QUEM SOMOS?</a></li>
+        <li><a href="#">QUEM SOMOS?</a></li>
         <li><a href="servicos.html">SERVIÇOS</a></li>
         <li><a href="projetos.html">PROJETOS</a></li>
+        <li><a href="mej.html">MEJ </a></li>
         <li><a href="contato.html">CONTATO</a></li>
-        <li><a href="mej.html">MEJ</a></li>
       </ul>
     </nav>
     <script src="javascript/mobile-navbar.js"></script>
@@ -44,23 +46,26 @@
   <form action="https://api.staticforms.xyz/submit" method="post">
     <input type="hidden" name="accessKey" value="bb11beec-798d-4bca-a787-6d271ee4ebfc">
     <div class="input-group1">
-      <input type="text" />
-      <label>Nome</label>
+      <input type="text" id="input1" required />
+      <label style="text-align: center;">Nome</label>
     </div>
     <div class="input-group2">
-      <input type="text" />
+      <input type="text" id="input2" required />
       <label>Telefone</label>
     </div>
     <div class="input-group3">
       <input class="ipt3" type="text" />
-      <label>Endereço de Email</label>
+      <label>Email</label>
     </div>
     <div class="input-group4">
       <input class="ipt4" type="text" />
       <label>Descrição</label>
     </div>
     <input type="hidden" name="redirectTo" value="" http://127.0.0.1:5500/index.html>
-    <input type="submit" class="submit_btt" value="Enviar" />
+    <div class="botao">
+      <input type="submit" class="submit_btt" value="Enviar" />
+    </div>
+
   </form>
 
   <div class="rodape_ctt">
@@ -69,19 +74,19 @@
     </div>
     <div class="icons">
       <a href="https://www.instagram.com/etechjr/" target="_blank">
-        <img src="css/imagens/ig_icon.png" class="ig_icon">
+        <i class="fa-brands fa-instagram fa-2x"></i>
       </a>
       <a href="https://www.linkedin.com/in/etech-jr-135b39240" target="_blank">
-        <img src="css/imagens/li_icon.png" class="li_icon">
+        <i class="fa-brands fa-linkedin fa-2x"></i>
       </a>
       <a href="contato.html">
-        <img src="css/imagens/email_icon.png" class="email_icon">
+        <i class="fa-regular fa-envelope fa-2x"></i>
       </a>
       <a href="contato.html">
-        <img src="css/imagens/wpp_icon.png" class="wpp_icon">
+        <i class="fa-brands fa-whatsapp fa-2x"></i>
       </a>
       <a href="contato.html">
-        <img src="css/imagens/loc_icon.png" class="loc_icon">
+        <i class="fa-solid fa-location-dot fa-2x"></i>
       </a>
     </div>
   </div>
